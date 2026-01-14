@@ -1,4 +1,3 @@
-#içerideki verileri kendi kullanımınıza göre düzenleyin 
 # -*- coding: utf-8 -*-
 
 import os
@@ -13,9 +12,6 @@ DOSYA_ADI = "adaylar.xlsx"
 SAYFA_ADI = "Adaylar"
 
 BASLIKLAR = [
-
-
-
 
 #11 tane baslik ekle
 
@@ -228,7 +224,7 @@ class App(ttk.Frame):
         key = f["key"]
         raw = self.var.get().strip()
 
-        TEXT_KEYS = {"""5 adet başlık yazınız""}
+        TEXT_KEYS = { } #5 adet başlık yazınız
 
         if key == "sizin başlığınız":
             self.answers[key] = normalize_yil(raw)   # 1990 gibi
@@ -306,4 +302,3 @@ if __name__ == "__main__":
     root.minsize(720, 340)
     App(root)
     root.mainloop()
-
